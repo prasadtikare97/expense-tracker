@@ -26,4 +26,4 @@ expense-tracker/
 ### Backend
 ```bash
 cd backend
-./mvnw spring-boot:run
+https://expense-tracker-8ads.onrender.com/expenses

@@ -75,7 +75,7 @@ function App() {
       setFormError('');
 
       const payload = {
-        id: crypto.randomUUID(),
+        id: Date.now().toString(),
         amount: Number(formData.amount),
         category: formData.category,
         description: formData.description,
