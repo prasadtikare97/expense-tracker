@@ -24,6 +24,9 @@ expense-tracker/
 ## How to Run
 
 ### Backend
-```bash
-cd backend
+
 https://expense-tracker-8ads.onrender.com/expenses
+
+### frontend
+
+https://expense-tracker-five-tau-48.vercel.app/
