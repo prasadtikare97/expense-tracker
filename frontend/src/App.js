@@ -1,7 +1,8 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import axios from 'axios';
 
 const API_BASE_URL = 'https://expense-tracker-8ads.onrender.com';
+
 function App() {
   const [formData, setFormData] = useState({
     amount: '',
@@ -18,7 +19,7 @@ function App() {
   const [error, setError] = useState('');
   const [formError, setFormError] = useState('');
 
-  const fetchExpenses = async () => {
+  const fetchExpenses = useCallback(async () => {
     try {
       setLoading(true);
       setError('');
@@ -38,11 +39,11 @@ function App() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [categoryFilter, sortOrder]);
 
   useEffect(() => {
     fetchExpenses();
-  }, [categoryFilter, sortOrder]);
+  }, [fetchExpenses]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
