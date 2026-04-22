@@ -23,10 +23,10 @@ expense-tracker/
 
 ## How to Run
 
-### Backend
+### Backend live
 
 https://expense-tracker-8ads.onrender.com/expenses
 
-### frontend
+### frontend live
 
 https://expense-tracker-five-tau-48.vercel.app/
