@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  margin-top: 0;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.expense-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.expense-form input,
+.filters select {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.expense-form button {
+  grid-column: span 2;
+  padding: 12px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background: #f0f0f0;
+}
+
+.error-text {
+  color: red;
+  margin-top: 10px;
+}
