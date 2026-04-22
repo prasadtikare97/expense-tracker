@@ -1,8 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8080';
-
+const API_BASE_URL = 'https://expense-tracker-8ads.onrender.com';
 function App() {
   const [formData, setFormData] = useState({
     amount: '',
