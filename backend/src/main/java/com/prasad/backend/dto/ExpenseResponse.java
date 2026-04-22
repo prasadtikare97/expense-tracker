@@ -1,4 +1,4 @@
-package com.prasad.backend.entity;
+package com.prasad.backend.dto;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
